@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Exchange</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="logo/logo from chat.png" alt="Your Logo" id="logo">
+        <h1>Demmoly Exchange</h1>
+        <h5>
+            We’re glad to have you here! At Demmoly Exchange, your satisfaction and security come first.
+            Whether you're buying or selling crypto, we offer competitive rates, fast transactions, and 100% secure service.
+            Feel free to place your order below or contact us if you have any questions.
+        </h5>
+    </header>
+    
+    <main>
+        
+
+
+        
+            <section class="order-form">
+            
+                <section class="order-form">
+                    <h2>Place Your Order</h2>
+                    <form id="orderForm" onsubmit="submitOrder(event)">
+                        
+                        <!-- Action Selector -->
+                        <div class="form-group">
+                            <label for="action">Are you buying or selling?</label>
+                            <select id="action" name="action" required>
+                                <option value="">Select</option>
+                                <option value="buy">Buy</option>
+                                <option value="sell">Sell</option>
+                            </select>
+                        </div>
+                
+                        <!-- Coin Selector -->
+                        <div class="form-group">
+                            <label for="coin">Choose Coin:</label>
+                            <select id="coin" name="coin" required>
+                                <option value="USDT">USDT</option>
+                                <option value="LTC">LTC</option>
+                                <option value="XLM">XLM</option>
+                            </select>
+                        </div>
+                
+                        <!-- Amount in Coin -->
+                        <div class="form-group">
+                            <label for="amount">Amount (in selected coin):</label>
+                            <input type="number" id="amount" name="amount" min="1" required>
+                        </div>
+                
+                        <!-- Conversion Display -->
+                        <div class="form-group">
+                            <p><strong>USD Value:</strong> $<span id="usdAmount">0</span></p>
+                            <p><strong>Naira Value:</strong> ₦<span id="nairaAmount">0</span></p>
+                            <p id="rate" style="font-weight: bold; color: green;"></p>
+                        </div>
+                
+                        <!-- User Info -->
+                        <div class="form-group">
+                            <label for="name">Your Name:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                
+                        <div class="form-group">
+                            <label for="email">Your Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                
+                        <!-- Submit -->
+                        <div class="form-group">
+                            <button type="submit">Submit Order</button>
+                        </div>
+                    </form>
+                </section>
+                
+            
+            
+            <p id="total"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Contact: <span id="contact">08166606974</span> or <span id="email">odemoqozeem@gmail.com</span></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
