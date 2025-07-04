@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #001f3f, #000033);
+}
+
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #0d1b2a;
+    color: white;
+}
+
+#logo {
+    width: 160px;      /* or any size you prefer */
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 10px;  /* Optional: makes it slightly rounded */
+}
+
+
+main {
+    padding: 20px;
+}
+
+.order-form {
+    background-color: #0d1b2a;
+    color: white;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    padding: 40px; /* increase padding */
+    border-radius: 12px;
+    margin-bottom: 30px;
+    font-size: 18px;
+    max-width: 600px;
+    margin: 30px auto;  /* centers it */
+}
+
+
+
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px;
+    text-align: center;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+select {
+    padding: 12px;
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+.rate-display {
+    text-align: center; /* 💥 This centers all text inside the rate-display box */
+}
+
+.rate-display h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: white;
+}
+
+#rate {
+    font-size: 20px;
+    color: #ffcc00; /* or any color you want */
+}
+
+input, select {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+
+
+
+
